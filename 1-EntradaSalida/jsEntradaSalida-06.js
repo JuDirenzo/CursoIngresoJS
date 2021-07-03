@@ -12,6 +12,6 @@ function sumar()
 
 	let result = n1 + n2;
 
-	alert(result);
+	alert("La suma total es " + result);
 }
 
