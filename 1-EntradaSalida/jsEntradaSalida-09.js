@@ -20,7 +20,19 @@ function mostrarAumento()
 	var nuevoSueldo;
 	var aumento;
 
-	aumento = sueldo * 0.10;
+	aumento = sueldo * 0.1;
+	nuevoSueldo = sueldo + aumento;
+	txtIdResultado.value = nuevoSueldo;
+}
+*/
+
+/* function mostrarAumento()
+{
+	var sueldo = parseFloat(txtIdSueldo.value);
+	var nuevoSueldo;
+	var aumento;
+
+	aumento = sueldo * 10 / 100;
 	nuevoSueldo = sueldo + aumento;
 	txtIdResultado.value = nuevoSueldo;
 }
