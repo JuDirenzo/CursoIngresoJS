@@ -43,5 +43,6 @@ function dividir()
 	var result = n1 / n2;
 
 	alert("La división da " + result);
+
 }
 
