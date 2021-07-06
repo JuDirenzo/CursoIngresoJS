@@ -13,7 +13,7 @@ function mostrarAumento()
 	//y luego / por 100: sueldo * 10 /100;
 	descuento = importe * 0.25;
 	resultado = importe - descuento;
-	txtIdResultado.value = resultado;
+	txtIdResultado.value = resultado.toFixed(2); //toFixed agrega 2 decimales al número
 }
 
 /*function mostrarAumento()
