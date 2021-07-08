@@ -10,9 +10,15 @@ ej.: "la Resta es 750"*/
 // let n2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 
 function sumar() {
-  let n1 = parseInt(txtIdNumeroUno.value);
-  let n2 = parseInt(txtIdNumeroDos.value);
-  let res = n1 + n2;
+  let n1;
+  let n2;
+  let res;
+  // hacer que el código sea más legible
+  n1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+  n2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+  res = n1 + n2;
+
+  //alert("El resultado es " + (parseInt(document.getElementById("txtIdNumeroUno").value) + parseInt(document.getElementById("txtIdNumeroDos").value)));
 
   alert("La suma total es " + res);
 }
