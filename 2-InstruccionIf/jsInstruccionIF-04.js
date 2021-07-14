@@ -16,7 +16,7 @@ function mostrar() {
 	  alert("No es adolescente.")
   }
 
-  if (!(edad < 13 || edad > 17 )) {
+  if (!(edad < 13 || edad > 17 )) { //se aplica Morgan
     alert("Es adolescente.")
   }
 }
