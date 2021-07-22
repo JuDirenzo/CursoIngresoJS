@@ -1,13 +1,13 @@
 function mostrar() {
-  let precio = 15000;
+  /*  let precio = 15000;
   let estacion;
   let destino;
 
   estacion = document.getElementById("txtIdEstacion").value;
   destino = document.getElementById("txtIdDestino").value;
 
-  /*por qué los else-if anidados tienen que ir por fuera de los {} de los else-if anteriores
-  y los switch anidados tienen que ir dentro de los {} anteriores? */
+  //por qué los else-if anidados tienen que ir por fuera de los {} de los else-if anteriores
+  //y los switch anidados tienen que ir dentro de los {} anteriores? 
 
   switch (estacion) {
     case "Invierno":
@@ -66,6 +66,8 @@ function mostrar() {
       }
   }
 
+  //
+
   let destino;
   let estacion;
   let precioFinal;
@@ -110,6 +112,8 @@ function mostrar() {
   precioFinal = precio + (aumento / 100) * precio - (descuento / 100) * precio;
   alert("Precio final: $" + precioFinal);
 
+  //
+
   let precio = 15000;
   let estacion;
   let destino;
@@ -128,6 +132,7 @@ function mostrar() {
         precioFinal = precio * 0.9;
       }
       break;
+
     case "Verano":
       if (destino == "Bariloche") {
         precioFinal = precio * 0.8;
@@ -137,6 +142,7 @@ function mostrar() {
         precioFinal = precio * 1.1;
       }
       break;
+
     case "Otoño":
     case "Primavera":
       if (destino == "Cordoba") {
@@ -149,7 +155,58 @@ function mostrar() {
 
   alert("El precio final es $" + precioFinal);
 
-  //CON LA SITUACIÓN INVERTIDA
+  //CON LA SITUACIÓN INVERTIDA 
+  */
 
-  
+  let destino;
+  let estacion;
+  let precioFinal;
+  let descuento = 0;
+  let aumento = 0;
+  let precio = 15000;
+
+  destino = document.getElementById("txtIdDestino").value;
+  estacion = document.getElementById("txtIdEstacion").value;
+
+  switch (destino) {
+    case "Bariloche":
+      if (estacion == "Invierno") {
+        aumento = 20;
+      } else if (estacion == "Verano") {
+        descuento = 20;
+      } else {
+        aumento = 10;
+      }
+      break;
+
+    case "Mar del plata":
+      if (estacion == "Invierno") {
+        descuento = 20;
+      } else if (estacion == "Verano") {
+        aumento = 20;
+      } else {
+        aumento = 10;
+      }
+      break;
+
+    case "Cataratas":
+      if (estacion == "Invierno") {
+        descuento = 10;
+      } else {
+        aumento = 10
+      }
+      break;
+
+    case "Cordoba":
+      if (estacion == "Invierno") {
+        descuento = 10;
+      } else if (estacion == "Verano") {
+        aumento = 10;
+      }
+      break;
+  }
+
+  precioFinal = precio + (aumento / 100) * precio - (descuento / 100) * precio;
+  alert("Precio final: $" + precioFinal);
+
 }
