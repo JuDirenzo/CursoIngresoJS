@@ -7,12 +7,4 @@ function mostrar() {
   }
   //si el bucle empieza en 0, termina en < (numero), no termina con el número exacto de la repeticion.
 
-  //Break dentro del for:
-
-  for (let i = 0; i < repeticion; i++) {
-    if (i == 10) {
-      break;
-    }
-  }
-  console.log(i); //muestra del 0 al 9, al llegar al 10 corta.
 } //FIN DE LA FUNCIÓN
